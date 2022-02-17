@@ -31,7 +31,7 @@ const Nav = () => {
                 <div class="item active ">
                   <img  src="https://heartofthecity.co.nz/sites/default/files/styles/ratio_5_x_3_medium_/public/2019-09/GG3%20big%20b-17%20White%20%2B%20Wong_s.jpg?itok=SnPR47ao" style={{width: '100%', height:'400px'}}/>
                   <div class="carousel-caption " >
-                    <h1>Ázsia kincse</h1>
+                    <h1>Ázsia kincsei</h1>
 
                         <h4 class="cszoveg">Ha ránk találsz, kincset találsz!</h4>
                   </div>
