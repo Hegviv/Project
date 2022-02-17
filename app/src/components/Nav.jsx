@@ -7,12 +7,13 @@ const Nav = () => {
       <>
 
 
-    
+
     <div id="hat" class="nav nav-horizontal justify-content-center  p-2 mb-5">
         <li class="nav-item"><Link class="nav-link text-light"to='./fooldal'>Főoldal</Link></li>
         <li class="nav-item"><Link class="nav-link text-light"to='./asztalfoglalas'>Asztalfoglalás</Link></li>
         <li class="nav-item"><Link class="nav-link text-light"to='./etlap'>Étlap</Link></li>
         <li class="nav-item"><Link class="nav-link text-light"to='./rendeles'>Rendelés</Link></li>
+        </div>
 
        
         <div class="container center">
@@ -26,7 +27,7 @@ const Nav = () => {
               </ol>
           
             
-              <div class="carousel-inner">
+              <div class="carousel-inner ">
           
                 <div class="item active ">
                   <img  src="https://heartofthecity.co.nz/sites/default/files/styles/ratio_5_x_3_medium_/public/2019-09/GG3%20big%20b-17%20White%20%2B%20Wong_s.jpg?itok=SnPR47ao" style={{width: '100%', height:'400px'}}/>
@@ -65,7 +66,7 @@ const Nav = () => {
               </a>
             </div>
           </div>
-          </div>
+          
   
 
 </>
