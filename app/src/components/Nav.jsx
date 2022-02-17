@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 
+
+
 const Nav = () => {
     return (
       <>
 
-  <div class="container text-light">
+
     
-    <div id="hat" class="nav nav-horizontal justify-content-center  p-2 mb-4">
+    <div id="hat" class="nav nav-horizontal justify-content-center  p-2 mb-5">
         <li class="nav-item"><Link class="nav-link text-light"to='./fooldal'>Főoldal</Link></li>
         <li class="nav-item"><Link class="nav-link text-light"to='./asztalfoglalas'>Asztalfoglalás</Link></li>
         <li class="nav-item"><Link class="nav-link text-light"to='./etlap'>Étlap</Link></li>
@@ -14,6 +16,7 @@ const Nav = () => {
 
        
         <div class="container center">
+          
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               
               <ol class="carousel-indicators">
@@ -46,13 +49,13 @@ const Nav = () => {
                     <img src="https://blog.yelp.com/wp-content/uploads/2020/02/Full-Article-Feature-Image-900x354-1.png" style={{width: '100%', height:'400px'}} />
                     <div class="carousel-caption" >
                       <h1 >Ázsia kincse</h1>
-                      <h4 class="cszoveg"> Akár otthonod kényelméből is éveszhetd!</h4>
+                      <h4 class="cszoveg"> Akár otthonod kényelméből is élvezheted!</h4>
                     </div>
                   </div>
             
               </div>
           
-              <a class="left carousel-control" href="#myCarousel" data-slide="back">
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
               
               </a>
@@ -62,9 +65,9 @@ const Nav = () => {
               </a>
             </div>
           </div>
-          
-        </div>
-</div> 
+          </div>
+  
+
 </>
     )
 }

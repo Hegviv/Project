@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 import Etlap from './components/Etlap';
 import Rendeles from './components/Rendeles';
 
+
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/asztalfoglalas' element={<Asztalfoglalas />} />
         <Route path='/etlap' element={<Etlap />} />
         <Route path='/rendeles' element={<Rendeles />} />
+
 
       </Routes>
     </BrowserRouter>

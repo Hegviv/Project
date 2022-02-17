@@ -45,9 +45,8 @@ letter-spacing: 0.4em;
   background-color: rgb(34, 33, 33);
 }
 
-table td{
-  padding: 30px;
-}
+
+
 .row{
   
   
@@ -58,11 +57,17 @@ margin-top:20px ;
 #ro{
   padding-top: 40px;
 }
-.table-image td{
-  
-    vertical-align: middle;
-    border: none;
+.table-image tr {
+    display: inline-block;
+    width: 100%;
+    margin-left: 13%;
+margin-bottom: 10%;
 
+  }
+
+
+  .col-sm-12{
+    margin-bottom: 20px;
   }
 
 #ez{
@@ -72,6 +77,10 @@ margin-top:20px ;
 
 p{
   text-align: justify;
+  font-size: 15px;
+}
+.col-sm-3{
+  font-size: 25px;
 }
 
 .App {
