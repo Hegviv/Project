@@ -41,7 +41,7 @@ const Nav = () => {
                 <div class="item">
                     <img src="https://sdg-migration-id.s3.amazonaws.com/Interior-Design-GAO-Architects-Han-_KAM2972-2005.jpg" style={{width: '100%', height:'400px'}}/>
                     <div class="carousel-caption">
-                      <h1>Ázsia kincse</h1>
+                      <h1>Ázsia kincsei</h1>
                       <h4 class="cszoveg"> Fedezd fel páratlan ízeinket!</h4>
                     </div>
                   </div>
@@ -49,7 +49,7 @@ const Nav = () => {
                   <div class="item">
                     <img src="https://blog.yelp.com/wp-content/uploads/2020/02/Full-Article-Feature-Image-900x354-1.png" style={{width: '100%', height:'400px'}} />
                     <div class="carousel-caption" >
-                      <h1 >Ázsia kincse</h1>
+                      <h1 >Ázsia kincsei</h1>
                       <h4 class="cszoveg"> Akár otthonod kényelméből is élvezheted!</h4>
                     </div>
                   </div>
