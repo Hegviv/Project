@@ -28,16 +28,18 @@ margin-right: 40px;
 
 
 }
+#navkep{
+  margin-bottom: 30px;
+}
 
 #hat{
+  margin-top: 10px;
   background-color: black;
   font-family: Spartan;
 font-style: normal;
 
 font-size: 24px;
 line-height: 10px;
-
-
 text-align: center;
 letter-spacing: 0.4em;
 }
