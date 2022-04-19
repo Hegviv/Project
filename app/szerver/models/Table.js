@@ -14,6 +14,23 @@ const TableSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    Nev: {
+      type: String,
+      required: true,
+    },
+    hol: {
+    type: String,
+    required: true,
+    },
+    email: {
+      type: String,
+      required: true,
+    },
+    telefon: {
+      type: Number,
+      required: true,
+    },
+    
   },
   { timestamps: true }
 );

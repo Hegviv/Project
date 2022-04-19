@@ -1,0 +1,33 @@
+const express = require("express");
+const path = require("path");
+const router = express.Router();
+const multer = require("multer");
+const Menu = require("../models/User");
+
+router.get("/", async (req, res) => {
+  try {
+    const menus = await Menu.find();
+    res.status(200).json(menus);
+  } catch (error) {
+    res.status(500).json(error.message);
+  }
+});
+
+router.post("/feltolt", async (req, res) => {
+    console.log(req.body);
+    const felhasznalonev = req.body.felhasznalonev;
+    const email = req.body.email;
+    const jelszo = req.body.jelszo;
+    
+  
+    try {
+      const newUser = new User({ felhasznalonev, email, jelszo });
+  
+      const user = await newUser.save();
+      res.status(200).json(user);
+    } catch (error) {
+      res.status(500).json(error.message);
+    }
+  });
+
+module.exports = router;
