@@ -1,4 +1,9 @@
-const Asztalfoglalas = () => {
+import React from 'react'
+import FormUse from './FormUse'
+import helyesaszt from './helyesaszt'
+import FormAsztal from "./FormAsztal"
+const Asztalfoglalas = (Submitform) => {
+    const {handleChange, values, handleSubmit, errors} = FormUse(Submitform, helyesaszt)
     return (<>
     <div id="foglal" class="container">
                 <form action="">
@@ -27,7 +32,14 @@ const Asztalfoglalas = () => {
                     <input type="text" id="Nev" name="Nev"></input> <br></br>
 
                     <label for="email">Email cím:</label> <br></br>
-                    <input type="email" id="email" name="email"></input> <br></br>
+                    <input type="email" 
+                name="email" 
+                className='form-input' 
+                placeholder='Adja meg az email-címét!'
+                value={values.email}
+                onChange={handleChange}></input> 
+                   {errors.email && <p>{errors.email}</p>}
+                <br></br>
 
                     <label for="telefon">Telefonszám:</label><br></br>
                     <input type="tel" id="telefon" name="telefon" placeholder="00-00-000-0000" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" required></input><br></br>
