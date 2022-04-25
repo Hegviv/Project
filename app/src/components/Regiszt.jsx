@@ -10,7 +10,7 @@ const Regiszt = (Submitform) => {
     <div id="regiszt" class="container">
        <form className="form">
            <hr></hr>
-           <h3 id="regisztrácio" class="text-center">Regisztráció</h3>
+           <h3 id="regisztrácio_felir" class="text-center">Regisztráció</h3>
            <div className='form-inputs'>
                 <label htmlFor="felhasznalo" className='form-label'>
                     Felhasználónév:

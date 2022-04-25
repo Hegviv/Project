@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 const Fololdal = () => {
     return (
 <>
+
+
+  
 <div id="al" class="container ">
 
-    <div id="kep" class="row justify-content-center ">
+    <div id="kep" class="row justify-content-center">
         <div class=" row col-sm-12"><h2>Kínálatuk</h2></div>
         
         <div class="col-sm-3 text-center"><img src="https://i.pinimg.com/564x/f1/8c/cf/f18ccffe2f416604b9e6dc3d8865142c.jpg" alt="" class="img-fluid " style={{borderRadius:"20%" }}/> Japán</div>
@@ -17,7 +21,8 @@ const Fololdal = () => {
     <div id="ro">
         <h3 id class="text-light">Rólunk</h3 >
         <div class="row">
-            <div class="col-sm-6 text-light">
+            <div class="col-sm-6 ">
+              
               
                 <p>
                 (valami szoveg majd az éteremről)
@@ -35,7 +40,7 @@ const Fololdal = () => {
     </div>
 </div>
 
-<div class="container ">
+<div class="container">
     <h3 class="row">Szakácsaink</h3>
                 
     <table  class="table-image">
@@ -69,7 +74,6 @@ const Fololdal = () => {
         </tbody>
     </table>   
 </div>
-
 </>
     )
 }

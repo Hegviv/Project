@@ -9,6 +9,7 @@ import Regiszt from './components/Regiszt';
 
 
 function App() {
+
   return (
     <>
     <BrowserRouter>
@@ -18,7 +19,7 @@ function App() {
         <Route path='/asztalfoglalas' element={<Asztalfoglalas />} />
         <Route path='/etlap' element={<Etlap />} />
         <Route path='/rendeles' element={<Regiszt />} />
-
+       
 
       </Routes>
     </BrowserRouter>

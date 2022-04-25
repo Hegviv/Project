@@ -1,6 +1,5 @@
 const Asztalfoglalas = () => {
     return (<>
-==
     <div id="foglal" class="container">
                 <form action="">
                 <hr></hr>
@@ -21,7 +20,7 @@ const Asztalfoglalas = () => {
                     <input  className="hely" type="radio" id="belter" name="hol" value="belter"/>
                     <label className="hely" for="belter">Beltér</label><br></br>
                     <input className="hely" type="radio" id="nincs" name="hol" value="nincs"/>
-                    <label className="hely" for="nincs">Nincs preferencia</label><br></br>
+                    <label className="hely" for="nincs" >Nincs preferencia</label><br></br>
                 <hr></hr>
                 <h3 id="adat" class="text-center">Személyes adatok</h3>
                     <label for="Nev">Név:</label><br></br>

@@ -1,20 +1,39 @@
 import { Link } from 'react-router-dom';
-
-
+import React from 'react';
+import { Button, Container, InputGroup } from 'reactstrap';
+import { ThemeContext, themes } from './theme/ThemeContext';
 
 const Nav = () => {
+  const [darkMode, setDarkMode] = React.useState(true);
+
     return (
       <>
 
 
 
     <div id="hat" class="nav nav-horizontal justify-content-center  p-2 mb-5">
-        <li class="nav-item"><Link class="nav-link text-light"to='./fooldal'>Főoldal</Link></li>
-        <li class="nav-item"><Link class="nav-link text-light"to='./asztalfoglalas'>Asztalfoglalás</Link></li>
-        <li class="nav-item"><Link class="nav-link text-light"to='./etlap'>Étlap</Link></li>
-        <li class="nav-item"><Link class="nav-link text-light"to='./rendeles'>Rendelés</Link></li>
+  
+        <li class="nav-item"><Link class="nav-link "to='./fooldal'>Főoldal</Link></li>
+        <li class="nav-item"><Link class="nav-link "to='./asztalfoglalas'>Asztalfoglalás</Link></li>
+        <li class="nav-item"><Link class="nav-link"to='./etlap'>Étlap</Link></li>
+        <li class="nav-item"><Link class="nav-link "to='./rendeles'>Rendelés</Link></li>
+        <span style={{width:"0px"}}><Link class="nav-link "to='./fooldal'> <InputGroup>
+          <ThemeContext.Consumer>
+            {({ changeTheme }) => (
+              <button 
+                color="link"
+                onClick={() => {
+                  setDarkMode(!darkMode);
+                  changeTheme(darkMode ? themes.light : themes.dark);
+                }}
+                id="gomb"
+              >
+              </button>
+            )}
+          </ThemeContext.Consumer>
+        </InputGroup> </Link></span>
         </div>
-
+     
        
         <div class="container center" id="navkep">
           
