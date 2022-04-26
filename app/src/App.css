@@ -39,7 +39,9 @@
 .white-content .row {
   color:black
 }
-
+.white-content .rolunkfelir{
+  color: black;
+}
 .white-content .table-image td{
   color: black;
 
@@ -158,6 +160,10 @@ letter-spacing: 0.4em;
 #ro{
   padding-top: 40px;
 }
+.rolunkfelir{
+  color: white;
+}
+
 .table-image tr {
     display: inline-block;
     width: 100%;
@@ -227,6 +233,9 @@ form {
   color: rgb(128, 12, 12);
   font-style: normal;
   line-height: 40px;
+}
+p{
+  color: white;
 }
 /* ------regisz--- */
 #regiszt{

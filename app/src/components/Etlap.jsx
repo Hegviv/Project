@@ -1,30 +1,48 @@
-
-import Kosar from "./Kosar";
-import Etelek from "./Etelek";
-import Kosarhoz from "./Kosarhoz";
-import { useState } from "react";
-
-const Etlap = () => {
-    const { termek } = Etelek;
-    const [kosarElem, setkosarElem] = useState([]);
-    const onAdd = (termek) => {
-        const exist = kosarElem.find(x => x.id === termek.id);
-        if(exist) {
-            setkosarElem(kosarElem.map(x => x.id === termek.id ? {...exist, qty: exist.qty + 1} : x
-                )
-                );
-        } else {
-            setkosarElem([...kosarElem, {...termek, qty: 1}]);
-        }
+import Header from './Etlap-Rendeles/Header';
+import Main from './Etlap-Rendeles/Main';
+import Basket from './Etlap-Rendeles/Basket';
+import data from './data';
+import { useState } from 'react';
+function Etlap() {
+  const { products } = data;
+  const [cartItems, setCartItems] = useState([]);
+  const onAdd = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist) {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
-    return (
-        <div className="App">
-            <div>
-                <Kosarhoz onAdd={onAdd} termek={termek}></Kosarhoz>
-                <Kosar onAdd={onAdd}>kosarElem={kosarElem}</Kosar>
-            </div>
-        </div>
-    )
+  };
+  const onRemove = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.id !== product.id));
+    } else {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+        )
+      );
+    }
+  };
+  return (
+    <div className="App">
+      <Header countCartItems={cartItems.length}></Header>
+      <div className="row">
+        <Main products={products} onAdd={onAdd}></Main>
+        <Basket
+          cartItems={cartItems}
+          onAdd={onAdd}
+          onRemove={onRemove}
+        ></Basket>
+      </div>
+    </div>
+  );
 }
 
 export default Etlap;

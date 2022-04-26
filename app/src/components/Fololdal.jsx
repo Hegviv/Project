@@ -19,7 +19,7 @@ const Fololdal = () => {
            
 
     <div id="ro">
-        <h3 id class="text-light">Rólunk</h3 >
+        <h3 id class="rolunkfelir">Rólunk</h3 >
         <div class="row">
             <div class="col-sm-6 ">
               
