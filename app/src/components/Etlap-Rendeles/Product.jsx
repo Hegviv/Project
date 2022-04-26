@@ -3,12 +3,12 @@ import React from 'react';
 export default function Product(props) {
   const { product, onAdd } = props;
   return (
-    <div>
-      <img className="small" src={product.image} alt={product.name} />
+    <div className=''>
+      <img  className="small" src={product.image} alt={product.name} style={{}} />
       <h3>{product.name}</h3>
       <div>${product.price}</div>
       <div>
-        <button onClick={() => onAdd(product)}>Add To Cart</button>
+        <button style={{color:"black", marginBottom:"20px"}} onClick={() => onAdd(product)}>Add To Cart</button>
       </div>
     </div>
   );

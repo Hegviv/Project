@@ -3,7 +3,8 @@ import Main from './Etlap-Rendeles/Main';
 import Basket from './Etlap-Rendeles/Basket';
 import data from './data';
 import { useState } from 'react';
-function Etlap() {
+import Kosar from './Kosar';
+function Kosarhozadott() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
@@ -32,20 +33,14 @@ function Etlap() {
   };
   return (
     <div className="App">
-      <Header countCartItems={cartItems.length}></Header>
-      <div className="row">
-        <Main products={products} onAdd={onAdd}></Main>
-       
-      </div>
-      <div id="alaphatter" class="container">
-      <Basket
+      
+        <Basket
           cartItems={cartItems}
           onAdd={onAdd}
           onRemove={onRemove}
         ></Basket>
-        </div>
-    </div>
+      </div>
   );
 }
 
-export default Etlap;
+export default Kosarhozadott;

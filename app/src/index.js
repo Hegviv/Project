@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ThemeContextWrapper from './components/theme/ThemeContextWrapper';
-import Fololdal from './components/Fololdal';
 
 ReactDOM.render(
   <ThemeContextWrapper>

@@ -7,18 +7,18 @@ export default function Basket(props) {
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
-    <aside className="block col-1">
-      <h2>Cart Items</h2>
+    <aside className="">
+      <h2>Kosár</h2>
       <div>
-        {cartItems.length === 0 && <div>Cart is empty</div>}
+        {cartItems.length === 0 && <div>A kosár üres</div>}
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="col-2">{item.name}</div>
             <div className="col-2">
-              <button onClick={() => onRemove(item)} className="remove">
+              <button style={{color:"black"}} onClick={() => onRemove(item)} className="remove">
                 -
               </button>{' '}
-              <button onClick={() => onAdd(item)} className="add">
+              <button style={{color:"black"}}onClick={() => onAdd(item)} className="add">
                 +
               </button>
             </div>
@@ -33,15 +33,12 @@ export default function Basket(props) {
           <>
             <hr></hr>
             <div className="row">
-              <div className="col-2">Items Price</div>
+              <div className="col-2">termék összesen:</div>
               <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
             </div>
+
             <div className="row">
-              <div className="col-2">Tax Price</div>
-              <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
-            </div>
-            <div className="row">
-              <div className="col-2">Shipping Price</div>
+              <div className="col-2">Szállítási díj</div>
               <div className="col-1 text-right">
                 ${shippingPrice.toFixed(2)}
               </div>
@@ -49,7 +46,7 @@ export default function Basket(props) {
 
             <div className="row">
               <div className="col-2">
-                <strong>Total Price</strong>
+                <strong>rendelés összesen</strong>
               </div>
               <div className="col-1 text-right">
                 <strong>${totalPrice.toFixed(2)}</strong>
@@ -57,8 +54,8 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button onClick={() => alert('Implement Checkout!')}>
-                Checkout
+              <button style={{color:"black"}} onClick={() => alert('Implement Checkout!')}>
+                Pénztár
               </button>
             </div>
           </>

@@ -7,7 +7,7 @@ const Fololdal = () => {
 
 
   
-<div id="al" class="container ">
+<div id="alaphatter" class="container ">
 
     <div id="kep" class="row justify-content-center">
         <div class=" row col-sm-12"><h2>Kínálatuk</h2></div>
