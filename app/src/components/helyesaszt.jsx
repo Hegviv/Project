@@ -3,28 +3,25 @@ export default function helyesaszt(values) {
     let errors = {}
 
     if(!values.nap.trim()) {
-        errors.nap = "Kérem adjon felhasználó nevet!"
+        errors.nap = "Kérem adjon meg a napot!"
     }
     if(!values.ido) {
-        errors.felhasznalo = "Kérem adjon email címet!"
+        errors.nap = "Kérem adja meg az időt!"
     }
     if(!values.fo) {
-        errors.felhasznalo = "Kérem adjon email címet!"
+        errors.nap = "Kérem adja meg hány fő!"
     }
     if(!values.hol) {
-        errors.felhasznalo = "Kérem adjon email címet!"
+        errors.nap = "Kérem Válasszon preferenciát!"
     }    
     if(!values.nev) {
-        errors.felhasznalo = "Kérem adjon email címet!"
+        errors.nap = "Kérem adja meg a nevet!"
     }
     if(!values.email) {
-        errors.felhasznalo = "Kérem adjon email címet!"
+        errors.nap = "Kérem adja meg az email címet!"
     }  
      if(!values.tel) {
-        errors.felhasznalo = "Kérem adjon email címet!"
-    }
-    if(!values.megjegz) {
-        errors.felhasznalo = "Kérem adjon email címet!"
+        errors.nap = "Kérem adjon meg telefon számot!"
     }
      return errors;
 }
