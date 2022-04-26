@@ -23,7 +23,7 @@ router.get("/", async (req, res) => {
 //   },
 // });
 
- const upload = multer({ storage: fileStorage });
+// const upload = multer({ storage: fileStorage });
 
  router.post("/feltolt",/* upload.single("kep"),*/ async (req, res) => {
    const foglalte = req.body.foglalte;
