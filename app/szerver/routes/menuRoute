@@ -17,7 +17,7 @@ router.post("/feltolt", async (req, res) => {
     console.log(req.body);
     const nev = req.body.nev;
     const tipus = req.body.tipus;
-    const leiras = req.body.leiras;
+    //const leiras = req.body.leiras;
     const ar = +req.body.ar;
   
     try {
