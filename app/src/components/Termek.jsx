@@ -7,7 +7,7 @@ export default function Termek(props) {
     <div>
         <img className='small' src={termek.kep}  alt={termek.nev}/>
         <h3>{termek.nev}</h3>
-        <div>${termek.ar}</div>
+        <div>FT{termek.ar}</div>
         <div>
             <button  onclick={()=>onAdd(termek)}>Hozzáadás a kosárhoz</button>
         </div>
