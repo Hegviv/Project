@@ -25,7 +25,7 @@ export default function Basket(props) {
             </div>
 
             <div className="col-2 text-right">
-              {item.qty} x ${item.price.toFixed(2)}
+              {item.qty} x {item.price.toFixed(2)}  Ft
             </div>
           </div>
         ))}
@@ -35,13 +35,13 @@ export default function Basket(props) {
             <hr></hr>
             <div className="row">
               <div className="col-2">termék összesen:</div>
-              <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
+              <div className="col-1 text-right"> {itemsPrice.toFixed(2)} Ft</div>
             </div>
 
             <div className="row">
               <div className="col-2">Szállítási díj</div>
               <div className="col-1 text-right">
-                ${shippingPrice.toFixed(2)}
+                {shippingPrice.toFixed(2)} Ft
               </div>
             </div>
 
@@ -50,7 +50,7 @@ export default function Basket(props) {
                 <strong>rendelés összesen</strong>
               </div>
               <div className="col-1 text-right">
-                <strong>${totalPrice.toFixed(2)}</strong>
+                <strong>{totalPrice.toFixed(2)}Ft</strong>
               </div>
             </div>
             <hr />
