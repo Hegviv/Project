@@ -5,8 +5,8 @@ export default function Main(props) {
   const { products, onAdd } = props;
   return (
     
-    <div id="alaphatter" class="container">
-      <h2></h2>
+    <div id="alaphatter" className="container">
+        <h3 id="alap" className="text-center">Étlap</h3>
     <main className="block col-2">
      
       <div className="row">

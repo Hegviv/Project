@@ -8,6 +8,8 @@
   background-color: #fff;
   
 }
+.white-content hr{
+  border-top: 1px solid red;}
 #gomb{
   border: solid 1px white;
   border-radius: 90px;
@@ -257,3 +259,33 @@ p{
 }
 
 
+h2{
+  color: white;
+}
+.kosar
+{
+  color: #fff;
+}
+
+.white-content h2{
+  color: black;
+}
+.kosar
+{
+  color: black;
+}
+.kosar{
+  border-radius: 90px;
+  background: url('https://beststuff.hu/assets/design/cart_w.png');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-top: 30px;
+  padding-left: 32px;
+  background-color: black;
+}
+.ures{
+  color:#fff;
+}
+.white-content .ures{
+  color: black;
+}

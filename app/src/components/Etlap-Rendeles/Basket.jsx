@@ -8,8 +8,9 @@ export default function Basket(props) {
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
     <aside className="">
+     
       <h2>Kosár</h2>
-      <div>
+      <div className='ures'>
         {cartItems.length === 0 && <div>A kosár üres</div>}
         {cartItems.map((item) => (
           <div key={item.id} className="row">
@@ -54,7 +55,7 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button style={{color:"black"}} onClick={() => alert('Implement Checkout!')}>
+              <button style={{color:"black"}} onClick={() => alert('Rendelés leadva!')}>
                 Pénztár
               </button>
             </div>
