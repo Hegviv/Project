@@ -19,6 +19,7 @@ mongoose.connect(process.env.MONGO_URL)
 
 // Middleware-k
 app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view-engine", "ejs");
@@ -27,6 +28,7 @@ app.set("view-engine", "ejs");
 app.use("/api/table", require("./routes/tableRoute"));
 app.use("/api/menu", require("./routes/menuRoute"));
 app.use("/api/order", require("./routes/orderRoute"));
+app.use("/api/basket", require("./routes/basketRoute"));
 
 
 // Route-ok szerkesztéshez

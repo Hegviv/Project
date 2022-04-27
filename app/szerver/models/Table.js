@@ -2,33 +2,37 @@ const mongoose = require("mongoose");
 
 const TableSchema = new mongoose.Schema(
   {
-    foglalte: {
-      type: Boolean,
-      required: true,
-    },
-    szam: {
-      type: Number,
-      required: true,
-    },
-    szemelySzam: {
-      type: Number,
-      required: true,
-    },
-    Nev: {
+    nap: {
       type: String,
       required: true,
     },
-    hol: {
-    type: String,
-    required: true,
+    ido: {
+      type: String,
+      required: true,
+    },
+    fo:{
+      type: Number,
+      required: true,
+    },
+    hol:{
+      type: String,
+      required: true,
+    },
+    vnev: {
+      type: String,
+      required: true,
     },
     email: {
       type: String,
       required: true,
     },
-    telefon: {
-      type: Number,
-      required: true,
+    tel: {
+        type: String,
+        required: true,
+    },
+    megjegyzes:{
+      type: String,
+      
     },
     
   },

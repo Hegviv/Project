@@ -1,0 +1,34 @@
+const express = require("express");
+const path = require("path");
+const router = express.Router();
+const multer = require("multer");
+const BasketModel = require("../models/Basket");
+
+router.get("/", async (req, res) => {
+  try {
+    const baskets = await BasketModel.find();
+    res.status(200).json(baskets);
+  } catch (error) {
+    res.status(500).json(error.message);
+  }
+});
+
+router.post("/feltolt", async (req, res) => {
+    console.log(req.body);
+    const id = req.body.product.id;
+    const name = req.body.product.name;
+    const price = req.body.product.price;
+    const qty = 1;
+    
+  
+    try {
+      const newBasket = new BasketModel({ id, name, qty, price });
+  
+      const basket = await newBasket.save();
+      res.status(200).json(basket);
+    } catch (error) {
+      res.status(500).json(error.message);
+    }
+  });
+
+module.exports = router;

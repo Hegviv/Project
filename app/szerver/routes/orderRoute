@@ -2,11 +2,11 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 const multer = require("multer");
-const Menu = require("../models/Order");
+const OrderModel = require("../models/Order");
 
 router.get("/", async (req, res) => {
   try {
-    const menus = await Menu.find();
+    const menus = await OrderModel.find();
     res.status(200).json(menus);
   } catch (error) {
     res.status(500).json(error.message);
@@ -15,6 +15,7 @@ router.get("/", async (req, res) => {
 
 router.post("/feltolt", async (req, res) => {
     console.log(req.body);
+    const cim = req.body.cim;
     const vnev = req.body.vnev;
     const email = req.body.email;
     const tel = req.body.tel;
@@ -22,10 +23,10 @@ router.post("/feltolt", async (req, res) => {
     
   
     try {
-      const newUser = new User({ felhasznalonev, email, jelszo });
+      const newOrder = new OrderModel({ nap, ido, fo, hol, vnev,email, tel, megjegyzes });
   
-      const user = await newUser.save();
-      res.status(200).json(user);
+      const order = await newOrder.save();
+      res.status(200).json(order);
     } catch (error) {
       res.status(500).json(error.message);
     }

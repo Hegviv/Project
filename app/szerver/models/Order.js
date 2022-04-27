@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 const OrderSchema = new mongoose.Schema(
   {
+    cim:{
+      type: String,
+      required: true,
+    },
     vnev: {
       type: String,
       required: true,
@@ -17,7 +21,9 @@ const OrderSchema = new mongoose.Schema(
     rendeles:{
       type: String,
       required: true,
-    }
+      
+    },
+    
   },
   { timestamps: true }
 );

@@ -2,59 +2,37 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 const multer = require("multer");
-const Table = require("../models/Table");
+const TableModel = require("../models/Table");
 
 router.get("/", async (req, res) => {
   try {
-    const tables = await Table.find();
-    res.status(200).json(tables);
+    const menus = await TableModel.find();
+    res.status(200).json(menus);
   } catch (error) {
     res.status(500).json(error.message);
   }
 });
 
-// Multer beállítása
-// const fileStorage = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, "kliens/public/kepek");
-//   },
-//   filename: (req, file, cb) => {
-//     cb(null, file.originalname);
-//   },
-// });
-
-// const upload = multer({ storage: fileStorage });
-
- router.post("/feltolt",/* upload.single("kep"),*/ async (req, res) => {
-   const foglalte = req.body.foglalte;
-   const szam = req.body.szam;
-   const szemelySzam = req.body.szemelySzam;
-   const nev = req.body.nev;
-//  const kep = req.file.originalname;
-   const hol = req.body.hol;
-   const email = req.body.email;
-   const telefon = req.body.telefon;
-
-
-   try {
-     const newTable = new Table({ foglalte, szam, szemelyszam, nev, hol, email, telefon });
-     const asztal = await newTable.save();
-     res.redirect("/feltoltes");
-   } catch (error) {
-     res.status(500).json(error.message);
-   }
- });
-
-// router.delete("/torol/:kep", async (req, res) => {
-//   try {
-//     const kep = req.params.kep;
-//     console.log(kep);
-//     const user = await Table.findOneAndDelete({ kep });
-//     // res.redirect("/");
-//     console.log(user);
-//   } catch (error) {
-//     res.status(500).json(error.message);
-//   }
-// });
+router.post("/feltolt", async (req, res) => {
+    console.log(req.body);
+    const nap = req.body.nap;
+    const ido = req.body.ido;
+    const fo = req.body.fo;
+    const hol = req.body.hol;
+    const vnev = req.body.vnev;
+    const email = req.body.email;
+    const tel = req.body.tel;
+    const megjegyzes = req.body.megjegyzes;
+    
+  
+    try {
+      const newTable = new TableModel({ nap, ido, fo, hol, vnev,email, tel, megjegyzes });
+  
+      const table = await newTable.save();
+      res.status(200).json(table);
+    } catch (error) {
+      res.status(500).json(error.message);
+    }
+  });
 
 module.exports = router;
