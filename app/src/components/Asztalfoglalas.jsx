@@ -5,10 +5,10 @@ import FormAsztal from "./FormAsztal"
 const Asztalfoglalas = (Submitform) => {
     const {handleChange, values, handleSubmit, errors} = FormUse(Submitform, helyesaszt)
     return (<>
-    <div id="alaphatter" class="container">
+    <div id="alaphatter" className="container">
                 <form action="">
                 <hr></hr>
-                <h3 id="alap" class="text-center">Asztal adatok</h3>
+                <h3 id="alap" className="text-center">Asztal adatok</h3>
                     <label for="datum">Kiválasztott nap:</label><br></br>
                     
                     <input type="date" id="datum" name="datum"/> <br></br>
@@ -27,7 +27,7 @@ const Asztalfoglalas = (Submitform) => {
                     <input className="hely" type="radio" id="nincs" name="hol" value="nincs"/>
                     <label className="hely" for="nincs" >Nincs preferencia</label><br></br>
                 <hr></hr>
-                <h3 id="alap" class="text-center">Személyes adatok</h3>
+                <h3 id="alap" className="text-center">Személyes adatok</h3>
                     <label for="Nev">Név:</label><br></br>
                     <input type="text" id="Nev" name="Nev"></input> <br></br>
 

@@ -274,3 +274,18 @@ h2{
 {
   color: black;
 }
+.kosar{
+  border-radius: 90px;
+  background: url('https://beststuff.hu/assets/design/cart_w.png');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-top: 30px;
+  padding-left: 32px;
+  background-color: black;
+}
+.ures{
+  color:#fff;
+}
+.white-content .ures{
+  color: black;
+}

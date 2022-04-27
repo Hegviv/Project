@@ -37,7 +37,7 @@ function Etlap() {
         <Main products={products} onAdd={onAdd}></Main>
        
       </div>
-      <div id="alaphatter" class="container">
+      <div id="alaphatter" className="container">
       <Basket
           cartItems={cartItems}
           onAdd={onAdd}
