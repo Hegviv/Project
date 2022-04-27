@@ -86,11 +86,38 @@ const data = {
         leiras:"Citromlé, Majonéz, sriracha szósz, Szezám olaj, Hínárlap, lazac"
       },
       {
-        id: '12',
+        id: '13',
         name: 'Édes-savanyú leves',
         price: 990,
-        image: 'https://www.planetsushi.hu/wp-content/uploads/Ebi-Amai.jpg',
-        leiras:"sertéshús, szárított fafülgomba, Tofu, bambuszrügy,tojsás, újhagyma, gombás szójaszósz "
+        image: 'https://kep.cdn.indexvas.hu/1/0/2910/29100/291006/29100635_58f1195c3e2be378bcf9ce3aee9b398e_wm.jpg',
+        leiras:"Sertéshús, szárított fafülgomba, Tofu, bambuszrügy,tojsás, újhagyma, gombás szójaszósz "
+      },
+      {
+        id: '14',
+        name: 'Tofu leves rizstésztával',
+        price: 990,
+        image: 'https://veganblog.hu/wp-content/uploads/2019/10/egyszeru%CC%8B-miso-leves-recept-vega%CC%81nblog.jpg',
+        leiras:"Tofu, földimogyoró olaj, újhagym, vöröshagyma, sárga kaliforniai paprika, zellerlevé, zöldség alaplé, limelé, szójaszós, curry paszta, rizstészt, koriander "
+      },
+      {
+        id: '15',
+        name: 'Mogyorós csirke pirított zöldséggel',
+        price: 2500,
+        image: 'https://kep.cdn.index.hu/1/0/2926/29265/292658/29265845_2246341_e1d505de2c874d343903f638223d816e_wm.jpg',
+        leiras:"Fokhagyma, sárgarép, kaliforniai paprika, csirkemel, szójaszó, méz, gyömbér"
+      },
+      {
+        id: '16',
+        name: 'Pekingi kacsa',
+        price: 2500,
+        image: 'https://595050-1923799-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/12/pekingi-kacsa-1.jpg',
+        leiras:"Kacsa, méz, újhagyma, uborka, mézz, ketchup, szójaszós, erős paprika, "
+      },      {
+        id: '17',
+        name: 'Gong Bao polip',
+        price: 2700,
+        image: 'https://kep.cdn.index.hu/1/0/2926/29265/292658/29265845_2246341_e1d505de2c874d343903f638223d816e_wm.jpg',
+        leiras:"Fokhagyma, sárgarép, kaliforniai paprika, csirkemel, szójaszó, méz, gyömbér"
       },
 
     ],
