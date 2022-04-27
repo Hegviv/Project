@@ -112,12 +112,13 @@ const data = {
         price: 2500,
         image: 'https://595050-1923799-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/12/pekingi-kacsa-1.jpg',
         leiras:"Kacsa, méz, újhagyma, uborka, mézz, ketchup, szójaszós, erős paprika, "
-      },      {
+      },   
+       {
         id: '17',
         name: 'Gong Bao polip',
         price: 2700,
         image: 'https://kep.cdn.index.hu/1/0/2926/29265/292658/29265845_2246341_e1d505de2c874d343903f638223d816e_wm.jpg',
-        leiras:"Fokhagyma, sárgarép, kaliforniai paprika, csirkemel, szójaszó, méz, gyömbér"
+        leiras:"polip, fehérbor, szójaszós,  chili paszta, Zöldhagyma, fokhagyma, gesztenye, földimogyoró"
       },
 
     ],
