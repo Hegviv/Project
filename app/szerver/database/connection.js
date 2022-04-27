@@ -1,4 +1,4 @@
-/*
+/* PLAN B
 const mongoose = require("mongoose");
 
 const connect = async () =>{
