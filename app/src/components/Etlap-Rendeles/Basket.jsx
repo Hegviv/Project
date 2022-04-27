@@ -17,7 +17,7 @@ export default function Basket(props) {
             <div className="col-sm-2">
             <img className="kosarbakep" src={item.image}  />
               </div>
-            <div id='termek' className="col-sm-2">
+            <div id='termek' className="col-sm-3">
               <h3>{item.name} </h3> 
             
             </div>
