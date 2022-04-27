@@ -16,7 +16,6 @@ const Nav = () => {
         <li class="nav-item"><Link class="nav-link "to='./fooldal'>Főoldal</Link></li>
         <li class="nav-item"><Link class="nav-link "to='./asztalfoglalas'>Asztalfoglalás</Link></li>
         <li class="nav-item"><Link class="nav-link"to='./etlap'>Étlap</Link></li>
-        <li class="nav-item"><Link class="nav-link "to='./rendeles'>Rendelés</Link></li>
         <span style={{width:"0px"}}><Link class="nav-link "to='./fooldal'> <InputGroup>
           <ThemeContext.Consumer>
             {({ changeTheme }) => (
