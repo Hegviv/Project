@@ -294,3 +294,22 @@ h2{
   width: 200px;
   margin-bottom:20px;
 }
+.kosarbakep{
+  width: 150px;
+  border-radius: 30px;
+}
+
+#termek{
+  margin-left: 80px;
+}
+h4{
+  margin-top: 23px;
+}
+#db{
+  color: black;
+  width: 20px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 5px;
+  
+} 
