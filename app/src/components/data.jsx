@@ -58,12 +58,41 @@ const data = {
         leiras:"Lazac, rizs"
       },
       {
-        id: '10',
+        id: '9',
         name: 'Ramen',
         price: 1750,
         image: 'https://diningguide.hu/wp-content/uploads/2016/04/biwako2-1.jpg',
         leiras:"Miso, shiitake gomba, fokhagyma, chilipaszta, juharszirup, mungóbabcsíra, főtt tojás, tofu, tészta "
       },
+      {
+        id: '10',
+        name: 'Tori Harumaki',
+        price: 1990,
+        image: 'https://images.japancentre.com/recipes/pics/249/main/249-harumaki-spring-rolls.jpg?1469572983',
+        leiras:"Rántott tavaszi tekercs csirkehússal, shiitake gombával, sárgarépával"
+      },
+      {
+        id: '11',
+        name: 'Ebi Amai saláta',
+        price: 3190,
+        image: 'https://www.planetsushi.hu/wp-content/uploads/Ebi-Amai.jpg',
+        leiras:"Grillezett rák, avokadóval és friss salátaágyon, spenóttal, mézes wasabi szósszal, shichimi-vel fűszerezve"
+      },
+      {
+        id: '12',
+        name: 'Karai Sake',
+        price: 990,
+        image: 'https://scontent-vie1-1.xx.fbcdn.net/v/t45.5328-4/19886495_1772498889446864_5338538997675196416_n.jpg?stp=c0.68.960.960a_dst-jpg&_nc_cat=106&ccb=1-5&_nc_sid=c48759&_nc_ohc=OEPvp_sYi74AX81O09r&_nc_ht=scontent-vie1-1.xx&oh=00_AT-atalef_E-y6-wKM352VFT93bw_jaWgZx4tTw4bE_Sfg&oe=626E5134',
+        leiras:"Citromlé, Majonéz, sriracha szósz, Szezám olaj, Hínárlap, lazac"
+      },
+      {
+        id: '12',
+        name: 'Édes-savanyú leves',
+        price: 990,
+        image: 'https://www.planetsushi.hu/wp-content/uploads/Ebi-Amai.jpg',
+        leiras:"sertéshús, szárított fafülgomba, Tofu, bambuszrügy,tojsás, újhagyma, gombás szójaszósz "
+      },
+
     ],
   };
   export default data;
