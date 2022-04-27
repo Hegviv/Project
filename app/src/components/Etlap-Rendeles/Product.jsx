@@ -18,7 +18,7 @@ export default function Product(props) {
 
      
       </div>
-      <div style={{marginRight:"20px"}} className='col-sm-2'>
+      <div style={{marginLeft:"60px"}} className='col-sm-3'>
      <h3> {product.price}  Ft</h3>
         <button className='kosar' style={{color:"black", marginBottom:"20px"}} onClick={() => onAdd(product)}></button>
       </div>
