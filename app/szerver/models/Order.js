@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema(
+const OrderSchema = new mongoose.Schema(
   {
-    felhasznalonev: {
+    vnev: {
       type: String,
       required: true,
     },
@@ -10,15 +10,19 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    jelszo: {
+    tel: {
         type: String,
         required: true,
     },
+    rendeles:{
+      type: String,
+      required: true,
+    }
     
   },
   { timestamps: true }
 );
 
-const UserModel = mongoose.model("users", UserSchema);
+const OrderModel = mongoose.model("orders", OrderSchema);
 
-module.exports = UserModel;
+module.exports = OrderModel;

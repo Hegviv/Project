@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 const multer = require("multer");
-const Menu = require("../models/User");
+const Menu = require("../models/Order");
 
 router.get("/", async (req, res) => {
   try {
@@ -15,9 +15,10 @@ router.get("/", async (req, res) => {
 
 router.post("/feltolt", async (req, res) => {
     console.log(req.body);
-    const felhasznalonev = req.body.felhasznalonev;
+    const vnev = req.body.vnev;
     const email = req.body.email;
-    const jelszo = req.body.jelszo;
+    const tel = req.body.tel;
+    const rendeles = req.body.rendeles;
     
   
     try {

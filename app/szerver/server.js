@@ -27,6 +27,7 @@ app.set("view-engine", "ejs");
 // Route-ok
 app.use("/api/table", require("./routes/tableRoute"));
 app.use("/api/menu", require("./routes/menuRoute"));
+app.use("/api/order", require("./routes/orderRoute"));
 // app.use("/api/kartya", require("./routes/kartyaRoute"));
 
 // Route-ok a book-tábla szerkesztéséhez
