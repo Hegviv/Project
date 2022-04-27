@@ -117,8 +117,15 @@ const data = {
         id: '17',
         name: 'Gong Bao polip',
         price: 2700,
-        image: 'https://kep.cdn.index.hu/1/0/2926/29265/292658/29265845_2246341_e1d505de2c874d343903f638223d816e_wm.jpg',
+        image: 'https://4.bp.blogspot.com/-UAo2Qd2QuVM/Vfl2otxhSWI/AAAAAAAAFDE/CF7Oeo92jtM/s1600/bd09bde137b3ad42b65adbf6222420de_w.jpg',
         leiras:"polip, fehérbor, szójaszós,  chili paszta, Zöldhagyma, fokhagyma, gesztenye, földimogyoró"
+      },
+      {
+        id: '18',
+        name: 'Édes-savanyú csirkecsíkok pirított zöldséggel',
+        price: 1990,
+        image: 'https://www.topreceptek.hu/upload/17840968_67b5b0c1e5b5a5_full.jpg',
+        leiras:"Csirkemell filé, vöröshagyma, paprika, póréhagyma, répa, gyömbér"
       },
 
     ],
