@@ -9,7 +9,7 @@ export default function Basket(props) {
   return (
     <aside className="">
       <h2>Kosár</h2>
-      <div>
+      <div className='kosar'>
         {cartItems.length === 0 && <div>A kosár üres</div>}
         {cartItems.map((item) => (
           <div key={item.id} className="row">

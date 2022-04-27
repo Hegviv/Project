@@ -6,7 +6,7 @@ export default function Main(props) {
   return (
     
     <div id="alaphatter" class="container">
-      <h2></h2>
+        <h3 id="alap" class="text-center">Étlap</h3>
     <main className="block col-2">
      
       <div className="row">
