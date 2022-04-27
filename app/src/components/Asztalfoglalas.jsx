@@ -1,7 +1,7 @@
 import React from 'react'
-import FormUse from './FormUse'
 import helyesaszt from './helyesaszt'
 import FormAsztal from "./FormAsztal"
+import FormUse from './FormUse'
 const Asztalfoglalas = (Submitform) => {
     const {handleChange, values, handleSubmit, errors} = FormUse(Submitform, helyesaszt)
     return (<>

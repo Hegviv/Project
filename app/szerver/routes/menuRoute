@@ -21,7 +21,7 @@ router.post("/feltolt", async (req, res) => {
     const ar = +req.body.ar;
   
     try {
-      const newMenu = new Menu({ nev, tipus, leiras, ar });
+      const newMenu = new Menu({ nev, tipus, ar });
   
       const menu = await newMenu.save();
       res.status(200).json(menu);

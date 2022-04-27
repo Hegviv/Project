@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import helyesaszt from './helyesaszt';
+
 
 const FormAsztal = (callback, helyesaszt) => {
     const [values, setValues] = useState({

@@ -9,8 +9,7 @@ dotenv.config();
 const app = express();
 
 // Adatbázis kapcsolat
-mongoose
-  .connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL)
   .then(() => {
     console.log("Sikeres adatbázis csatlakozás!");
   })
@@ -28,15 +27,15 @@ app.set("view-engine", "ejs");
 app.use("/api/table", require("./routes/tableRoute"));
 app.use("/api/menu", require("./routes/menuRoute"));
 app.use("/api/order", require("./routes/orderRoute"));
-// app.use("/api/kartya", require("./routes/kartyaRoute"));
 
-// Route-ok a book-tábla szerkesztéséhez
-// const Book = require("./models/Book");
+
+// Route-ok szerkesztéshez
+// const Table = require("./models/Table");
 
 // app.get("/", async (req, res) => {
-//   const books = await Book.find();
+//   const tables = await Table.find();
 //   res.render("index.ejs", {
-//     books: books,
+//     tables: tables,
 //   });
 // });
 
