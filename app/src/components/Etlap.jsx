@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import Header from './Etlap-Rendeles/Header';
 import Main from './Etlap-Rendeles/Main';
 import Basket from './Etlap-Rendeles/Basket';
@@ -55,6 +56,7 @@ postData('http://localhost:5000/api/basket/feltolt', { product })
     }
   };
   return (
+    <>
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
       <div className="row">
@@ -69,6 +71,7 @@ postData('http://localhost:5000/api/basket/feltolt', { product })
         ></Basket>
         </div>
     </div>
+    </>
   );
 }
 
