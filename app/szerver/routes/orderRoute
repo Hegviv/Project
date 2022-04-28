@@ -23,7 +23,7 @@ router.post("/feltolt", async (req, res) => {
     
   
     try {
-      const newOrder = new OrderModel({ nap, ido, fo, hol, vnev,email, tel, megjegyzes });
+      const newOrder = new OrderModel({ cim, vnev, email, tel, rendeles });
   
       const order = await newOrder.save();
       res.status(200).json(order);
