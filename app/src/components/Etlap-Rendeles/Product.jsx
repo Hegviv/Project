@@ -20,7 +20,7 @@ export default function Product(props) {
       </div>
       <div style={{marginLeft:"60px"}} className='col-sm-3'>
      <h3> {product.price}  Ft</h3>
-        <button className='kosar' style={{color:"black", marginBottom:"20px"}} onClick={() => onAdd(product)}></button>
+        <button className='kosar' style={{color:"black", marginBottom:"20px"}} onClick={() => onAdd(product)(alert('Termék a kosárba helyezve!'))}></button>
       </div>
       </div>
     </div>
