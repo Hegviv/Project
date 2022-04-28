@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
@@ -66,8 +67,9 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button style={{color:"black"}} onClick={() => alert('Rendelés leadva!')}>
-                Pénztár
+              <button style={{color:"black"}} class="nav-item"><Link class="nav-link"to='./penztar'>
+              pénztar
+               </Link>
               </button>
             </div>
           </>
