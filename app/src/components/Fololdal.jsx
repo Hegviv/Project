@@ -25,11 +25,13 @@ const Fololdal = () => {
               
               
                 <p>
-                (valami szoveg majd az éteremről)
-                Aliquam vel porta lorem, sed elementum nulla. Duis gravida ut lacus sit amet pellentesque. Pellentesque faucibus, magna sit amet malesuada volutpat, sem sem rhoncus nibh, ac auctor turpis ex sed quam. Ut ut magna cursus, tempor ex in, hendrerit mauris. Donec facilisis lacus in magna vulputate, sit amet tincidunt magna sollicitudin. Nunc quis diam purus. Aenean at ante est. Etiam lobortis dignissim erat, vitae varius justo. Nulla ipsum arcu, facilisis ac dapibus posuere, tincidunt ac felis. Donec blandit maximus urna, a dictum odio gravida non. Nam tempus molestie metus vulputate tincidunt.
+                Szeretettel várunk minden kedves vendéget Ázsiai stílusú éttermünkben, ahol minden tőlünk telhetőt megtesznk azért, hogy átadhassunk a keleti gasztronómia élményeit vendégeinknek.
+                    Képzett és szenvedélyes személyzetünk évek óta alkalmazza gasztronómiai és vendéglátási tudását és ennek eredményéül az évek során csupán dícséreteket kapunk mind vendégeinktől, mind kritikusoktól.
                 </p>
                 <p>
-                Aliquam vel porta lorem, sed elementum nulla. Duis gravida ut lacus sit amet pellentesque. Pellentesque faucibus, magna sit amet malesuada volutpat, sem sem rhoncus nibh, ac auctor turpis ex sed quam. Ut ut magna cursus, tempor ex in, hendrerit mauris. Donec facilisis lacus in magna vulputate, sit amet tincidunt magna sollicitudin. Nunc quis diam purus. Aenean at ante est. Etiam lobortis dignissim erat, vitae varius justo. Nulla ipsum arcu, facilisis ac dapibus posuere, tincidunt ac felis. Donec blandit maximus urna, a dictum odio gravida non. Nam tempus molestie metus vulputate tincidunt.
+                Éttermünk a Szegedi Szent György tér 3. szám alatt helyezkedik el, a belvárostól 5 perc sétára. Az alacsony jármű forgalom és
+                     a szomszédos park ideális helyet nyújt azok számára akik némi kikapcsolódásra vágynak. A teraszonkun bőséggel előforduló ritka keleti növények továbbá fokozzák éttermünk kulturális autentikusságát.
+                     Ezen felül szándékunkban áll további két éttermet nyitni a város különböző pontjain, amik magukba foglalják a belvárost és a Tisza túlpartján fekvő Újszegedet is.
                 </p>
             </div>
 

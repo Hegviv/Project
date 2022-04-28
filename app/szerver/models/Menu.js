@@ -10,10 +10,6 @@ const MenuSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    /*leiras: {
-        type: String,
-        required: true,
-    },*/
     ar: {
         type: Number,
         required: true,
