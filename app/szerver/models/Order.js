@@ -20,7 +20,7 @@ const OrderSchema = new mongoose.Schema(
     },
     rendeles:{
       type: String,
-      required: true,
+      
       
     },
     
