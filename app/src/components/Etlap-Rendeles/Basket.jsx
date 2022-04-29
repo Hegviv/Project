@@ -67,7 +67,7 @@ export default function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button style={{color:"black"}} class="nav-item" ><Link class="nav-link"to='./penztar' style={{color:"black"}}>
+              <button style={{color:"black"}} class="nav-item"><Link class="nav-link"to='./penztar' style={{color:"black"}}>
               pénztar
                </Link>
               </button>
